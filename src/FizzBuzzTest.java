@@ -6,24 +6,26 @@ import org.junit.jupiter.api.DisplayName;
 
 class FizzBuzzTest {
 
-	FizzBuzz fizzBuzz = new FizzBuzz();
-	String output = fizzBuzz.getBuzz(1);
+	FizzBuzz fizzBuzz;
+	
 	@BeforeEach
 	void setUp() throws Exception {
 		
+		fizzBuzz = new FizzBuzz(); // Reset Value Before enter each Test
 	}
 	
 	@DisplayName("Actual1")
 	@Test
 	void ShouldBe1_Input1() {// expected =1
-		assertEquals(1, output);
+		fizzBuzz.FizzBuzzTesting(1);
+		assertEquals(1,fizzBuzz.getNum());
 	}
 	
 	@DisplayName("Actual2")
 	@Test
-	void ShouldBe2_Input2() {//µéÍ§à»ÃÕÂºà·ÕÂº à»ç¹ expected =2
-		assertEquals(2, output);
+	void ShouldBe2_Input2() {//ï¿½ï¿½Í§ï¿½ï¿½ï¿½Âºï¿½ï¿½Âº ï¿½ï¿½ expected =2
+		fizzBuzz.FizzBuzzTesting(2);
+		assertEquals(2,fizzBuzz.getNum());
 	}
 	
-
 }
