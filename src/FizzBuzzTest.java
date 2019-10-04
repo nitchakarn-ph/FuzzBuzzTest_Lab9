@@ -28,4 +28,9 @@ class FizzBuzzTest {
 		assertEquals(2,fizzBuzz.getNum());
 	}
 	
+	@DisplayName("Actual3")
+	@Test
+	void ShouldBe3_InputFizz() {
+		assertEquals("Fizz", fizzBuzz.getFizz());
+	}
 }
