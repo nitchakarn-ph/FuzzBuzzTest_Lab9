@@ -31,7 +31,7 @@ class FizzBuzzTest {
 	@DisplayName("INPUT3")
 	@Test
 	void ShouldBeFizz_Input3() {
-		fizzBuzz.FizzBuzzTesting(3);;
+		fizzBuzz.FizzBuzzTesting(3);
 		assertEquals("Fizz", fizzBuzz.getText());
 	}
 	
@@ -45,63 +45,68 @@ class FizzBuzzTest {
 	@DisplayName("INPUT5")
 	@Test
 	void ShouldBeBuzz_Input5() {
-		fizzBuzz.FizzBuzzTesting(5);;
+		fizzBuzz.FizzBuzzTesting(5);
 		assertEquals("Buzz", fizzBuzz.getText());
 	}
 	
 	@DisplayName("INPUT6")
 	@Test
 	void ShouldBeFizz_Input6() {
-		fizzBuzz.FizzBuzzTesting(6);;
+		fizzBuzz.FizzBuzzTesting(6);
 		assertEquals("Fizz", fizzBuzz.getText());
 	}
 	
 	@DisplayName("INPUT7")
 	@Test
 	void ShouldBe7_Input7() {
-		fizzBuzz.FizzBuzzTesting(7);;
+		fizzBuzz.FizzBuzzTesting(7);
 		assertEquals(7, fizzBuzz.getNum());
 	}
 	
 	@DisplayName("INPUT8")
 	@Test
 	void ShouldBe8_Input8() {
-		fizzBuzz.FizzBuzzTesting(8);;
+		fizzBuzz.FizzBuzzTesting(8);
 		assertEquals(8, fizzBuzz.getNum());
 	}
 	
 	@DisplayName("INPUT9")
 	@Test
 	void ShouldBeFizz_Input9() {
-		fizzBuzz.FizzBuzzTesting(9);;
+		fizzBuzz.FizzBuzzTesting(9);
 		assertEquals("Fizz", fizzBuzz.getText());
 	}
 	
 	@DisplayName("INPUT10")
 	@Test
 	void ShouldBeBuzz_Input10() {
-		fizzBuzz.FizzBuzzTesting(10);;
+		fizzBuzz.FizzBuzzTesting(10);
 		assertEquals("Buzz", fizzBuzz.getText());
 	}
 	
 	@DisplayName("INPUT11")
 	@Test
 	void ShouldBe11_Input11() {
-		fizzBuzz.FizzBuzzTesting(11);;
+		fizzBuzz.FizzBuzzTesting(11);
 		assertEquals(11, fizzBuzz.getNum());
 	}
 	
 	@DisplayName("INPUT12")
 	@Test
 	void ShouldBeFizz_Input12() {
-		fizzBuzz.FizzBuzzTesting(12);;
+		fizzBuzz.FizzBuzzTesting(12);
 		assertEquals("Fizz", fizzBuzz.getText());
 	}
 	
 	@DisplayName("INPUT13")
 	@Test
+/*/*<<<<<<< Updated upstream
 	void ShouldBe13_Input13() {
-		fizzBuzz.FizzBuzzTesting(13);;
+		fizzBuzz.FizzBuzzTesting(13);
+//=======*/
+	void ShouldBeFizz_Input13() {
+		fizzBuzz.FizzBuzzTesting(13);
+//>>>>>>> Stashed changes
 		assertEquals(13, fizzBuzz.getNum());
 	}
 	
@@ -111,4 +116,13 @@ class FizzBuzzTest {
 		fizzBuzz.FizzBuzzTesting(14);;
 		assertEquals(14, fizzBuzz.getNum());
 	}
+	
+	@DisplayName("INPUT15")
+	@Test
+	void ShouldBeFizzBuzz_Input15() {
+		fizzBuzz.FizzBuzzTesting(15);;
+		assertEquals("FizzBuzz", fizzBuzz.getText());
+	}
+	
+	
 }
