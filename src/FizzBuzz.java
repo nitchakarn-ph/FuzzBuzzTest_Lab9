@@ -37,13 +37,5 @@ public class FizzBuzz {
 		}
 	}
 	
-	public void InputFizzBuzz(String input) {
-		if(input == "Buzz") {
-			Text = getBuzz();
-		}else if(input == "Fizz") {
-			Text = getFizz();
-		}else {
-			Text = input;
-		}
-	}
+	
 }
