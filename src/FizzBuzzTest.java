@@ -30,7 +30,7 @@ class FizzBuzzTest {
 	
 	@DisplayName("Actual3")
 	@Test
-	void ShouldBe3_InputFizz() {
+	void ShouldBeFizz_InputFizz() {
 		fizzBuzz.InputFizzBuzz("Fizz");;
 		assertEquals("Fizz", fizzBuzz.getText());
 	}
@@ -44,8 +44,14 @@ class FizzBuzzTest {
 	
 	@DisplayName("Actual5")
 	@Test
-	void ShouldBe4_InputBuzz() {
+	void ShouldBeBuzz_InputBuzz() {
 		fizzBuzz.InputFizzBuzz("Buzz");;
 		assertEquals("Buzz", fizzBuzz.getText());
+	}
+	@DisplayName("Actual6")
+	@Test
+	void ShouldBeFizz_InputBuzz() {
+		fizzBuzz.InputFizzBuzz("Fizz");;
+		assertEquals("Fizz", fizzBuzz.getText());
 	}
 }
