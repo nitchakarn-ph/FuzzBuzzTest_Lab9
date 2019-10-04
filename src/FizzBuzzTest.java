@@ -97,4 +97,11 @@ class FizzBuzzTest {
 		fizzBuzz.FizzBuzzTesting(12);;
 		assertEquals("Fizz", fizzBuzz.getText());
 	}
+	
+	@DisplayName("INPUT13")
+	@Test
+	void ShouldBeFizz_Input13() {
+		fizzBuzz.FizzBuzzTesting(13);;
+		assertEquals(13, fizzBuzz.getNum());
+	}
 }
